@@ -5,6 +5,10 @@
 * {
    margin: 0px;
    padding: 0px;
+
+   font-family: "Huninn", sans-serif;
+   font-weight: 400;
+   font-style: normal;
 }
 
 html {
@@ -84,6 +88,7 @@ main {
 
    background-color: #030317;
    opacity: 0.75;
+   box-shadow: 20px 0px 30px rgba(0, 0, 0, 0.568);
 }
 
 .user-profile-icon {
@@ -100,7 +105,7 @@ main {
 
 .user-name-label {
    color: white;
-   font-size: 4rem;
+   font-size: clamp(3rem, 2vw, 5rem);
    margin: 2rem 0px;
 }
 
@@ -108,7 +113,55 @@ main {
    color: white;
    font-size: 2rem;
    text-align: center;
-   width: 60%;
+   width: 80%;
+
+   /*overflow: scroll;*/
+}
+
+.linkedbranch-logo {
+   margin-top: auto;
+   justify-content: end;
+}
+
+.linkedbranch-logo .logo{
+   height: 3rem;
+   width: 3rem;
+   
+   mask-image: url(./assets/imgs/Linked\ Branch\ Logo.svg);
+   mask-repeat: no-repeat;
+   mask-position: center;
+   mask-size: contain;
+
+   background-color: white;
+}
+
+.linkedbranch-logo p {
+   color: white;
+   font-size: 2rem;
+}
+
+.user-main-content {
+   flex: 1;
+}
+
+.user-main-content section {
+   flex: 1;
+   height: 100%;
+   overflow-y: scroll;
+   gap: 3rem;
+}
+
+.linked-button {
+   background-color: #843A2D;
+   box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.383);
+   border: none;
+   border-radius: 10px;
+   padding: 2rem clamp(10rem, 30%, 40rem);
+}
+
+.linked-button p {
+   color: white;
+   font-size: 3rem;
 }
 
 .wavy {

@@ -152,11 +152,22 @@ main {
 }
 
 .linked-button {
+   cursor: pointer;
    background-color: #843A2D;
    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.383);
    border: none;
    border-radius: 10px;
    padding: 2rem clamp(10rem, 30%, 40rem);
+
+   transition: scale 0.1s ease-in-out;
+   transition: border-radius 0.1s ease-in-out;
+   transition: filter 0.2 ease-in-out;
+}
+
+.linked-button:hover {
+   scale: 1.02;
+   border-radius: 30px;
+   filter: brightness(0.9);
 }
 
 .linked-button p {

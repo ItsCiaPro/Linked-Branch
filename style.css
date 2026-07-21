@@ -77,7 +77,7 @@ main {
    background-size: cover;
 }
 
-.user-sidebar {
+.user-content {
    box-sizing: border-box;
    height: 100%;
    width: clamp(40rem, 35%, 63.5rem);
@@ -111,7 +111,7 @@ main {
 
 .user-about-label {
    color: white;
-   font-size: 2rem;
+   font-size: clamp(1rem, 1vw, 3rem);
    text-align: center;
    height: min-content;
    width: 80%;
@@ -141,56 +141,7 @@ main {
    font-size: 2rem;
 }
 
-.user-main-content {
-   height: 100%;
-   width: 100%;
-   box-sizing: border-box;
-}
-
-.user-main-content section {
-   width: 100%;
-   height: 95%;
-}
-
-.linked-button-list {
-   box-sizing: border-box;
-   align-items: center;
-   overflow-y: auto;
-   overflow-x: visible;
-
-   height: 100%;
-   width: auto;
-   max-width: 100%;
-   padding: 0 2rem;
-   gap: 2rem;
-}
-
-.linked-button {
-   cursor: pointer;
-   background-color: #843A2D;
-   box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.383);
-   border: none;
-   border-radius: 10px;
-   padding: 1.5rem clamp(20rem, 20vw, 40rem);
-
-   transition: scale 0.1s ease-in-out;
-   transition: border-radius 0.1s ease-in-out;
-   transition: filter 0.2 ease-in-out;
-}
-
-.linked-button:hover {
-   scale: 1.02;
-   border-radius: 30px;
-   filter: brightness(0.9);
-}
-
 .linked-button p {
    color: white;
    font-size: 3rem;
-}
-
-.wavy {
-  mask: 
-    radial-gradient(34.99px at calc(100% - 48px) 50%,#000 99%,#0000 101%) 0 calc(50% - 60px)/100% 120px,
-    radial-gradient(34.99px at calc(100% + 18px) 50%,#0000 99%,#000 101%) calc(100% - 30px) 50%/100% 120px repeat-y;
 }

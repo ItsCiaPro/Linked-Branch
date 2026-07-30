@@ -6,6 +6,7 @@
 }
 
 * {
+   box-sizing: border-box;
    margin: 0px;
    padding: 0px;
 
@@ -27,6 +28,11 @@ body {
    min-height: 100vh;
    width: 100%;
    margin: 0px;
+
+   background-image: url(/assets/imgs/Background.png);
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-attachment: fixed;
 }
 
 main {
@@ -78,28 +84,21 @@ main {
    align-items: center;
 }
 
-
-.user-page-bg {
-   background-image: url(./assets/imgs/Background.png);
-   background-repeat: no-repeat;
-   background-size: cover;
-   background-attachment: fixed;
-}
-
 .user-content {
-   box-sizing: border-box;
-   height: fit-content;
-   min-height: 98%;
-   width: min(95%, 63rem);
-   padding: 20px;
-   margin: 1rem 0;
+   min-height: 100%;
+   width: 55rem;
+   margin-top: 5rem;
 
    justify-content: start;
    align-items: center;
 
    background-color: #030317a9;
    box-shadow: 20px 0px 30px rgba(0, 0, 0, 0.568);
-   border-radius: 20px;
+   border-radius: 2rem 2rem 0 0;
+}
+
+.profile-header {
+   padding-top: 8rem;
 }
 
 .user-profile-icon {
@@ -107,8 +106,9 @@ main {
    width: 10rem;
    height: 10rem;
    border-radius: 100%;
+   margin: 2rem 0 1rem 0;
 
-   background-image: url(./assets/imgs/profile-icon.jpg);
+   background-image: url(/assets/imgs/profile-icon.jpg);
    background-position-y: center;
    background-position-x: center;
    background-size: cover;
@@ -116,22 +116,25 @@ main {
 
 .user-name-label {
    color: white;
-   font-size: clamp(3rem, 2vw, 5rem);
-   margin: 2rem 0px;
+   font-size: 3rem;
+   font-weight: bold;
 }
 
 .user-about-label {
    color: white;
-   font-size: clamp(1.2rem, 1.5vw, 2rem);
+   font-size: 2rem;
    text-align: center;
    height: min-content;
-   width: 80%;
+   width: 75%;
+   margin-top: 0.25rem;
 
+   word-break: break-word;
    /*overflow: scroll;*/
 }
 
 .social-icons-container {
-   margin: 1.5rem 0;
+   flex-wrap: wrap;
+   padding: 2rem 0 3rem 0;
    width: 100%;
    gap: clamp(0.5rem, 4vw, 1rem);
 }
@@ -170,9 +173,9 @@ main {
    flex-grow: 1;
    box-sizing: border-box;
 
-   width: max(25rem, 60%);
+   width: 100%;
 
-   padding-bottom: 1.5rem;
+   padding: 0 3rem 3rem 3rem;
    gap: 1.5rem;
    
 }
@@ -180,7 +183,7 @@ main {
 .linked-button {
    border: none;
    width: 100%;
-   height: 4rem;
+   height: 6rem;
    border-radius: 1.5rem;
 
 
@@ -189,11 +192,17 @@ main {
 
 .linked-button p {
    color: white;
-   font-size: 3rem;
+   font-size: 2rem;
 }
 
-@media(max-width: 500px) {
-   .user-profile-icon {
+@media(max-width: 575px) {
+
+   .user-content {
+      border-radius: 0;
+      width: 100%;
+   }
+
+   /* .user-profile-icon {
       width: 8rem;
       height: 8rem;
    }
@@ -214,5 +223,5 @@ main {
 
    .linked-button p {
       font-size: 2rem;
-   }
+   } */
 }

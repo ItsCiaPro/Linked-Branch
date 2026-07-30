@@ -1,0 +1,32 @@
+{
+  "name": "linked-branch",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ItsCiaPro/Linked-Branch.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/ItsCiaPro/Linked-Branch/issues"
+  },
+  "homepage": "https://github.com/ItsCiaPro/Linked-Branch#readme",
+  "dependencies": {
+    "bcryptjs": "^3.0.3",
+    "cookie-parser": "^1.4.7",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "hbs": "^4.2.1",
+    "jsonwebtoken": "^9.0.3",
+    "mysql2": "^3.23.2",
+    "nodemon": "^3.1.14"
+  }
+}

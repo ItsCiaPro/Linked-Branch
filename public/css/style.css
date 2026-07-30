@@ -155,7 +155,7 @@ main {
    height: 3rem;
    width: 3rem;
    
-   mask-image: url(./assets/imgs/Linked\ Branch\ Logo.svg);
+   mask-image: url(/assets/imgs/Linked\ Branch\ Logo.svg);
    mask-repeat: no-repeat;
    mask-position: center;
    mask-size: contain;

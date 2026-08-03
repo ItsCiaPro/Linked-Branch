@@ -7,8 +7,6 @@
 
 * {
    box-sizing: border-box;
-   margin: 0px;
-   padding: 0px;
 
    font-family: "Huninn", sans-serif;
    font-weight: 400;
@@ -25,7 +23,7 @@ html {
 }
 
 body {
-   min-height: 100vh;
+   min-height: 200vh;
    width: 100%;
    margin: 0px;
 
@@ -47,7 +45,9 @@ main {
   font-style: normal;
 }
 
-/* BASE CLASSES */
+
+
+/* ========== BASE CLASSES ========== */
 
 .aspect-square {
    aspect-ratio: 1/1;
@@ -83,6 +83,59 @@ main {
    justify-content: center;
    align-items: center;
 }
+
+/* ========== BASE CLASSES ========== */
+
+
+
+/* ========== HEADER CLASSES ========== */
+
+
+
+header.partial {
+   position: fixed;
+   top: 0;
+   left: 0;
+   justify-content: space-between;
+   background-color: white;
+   padding: 2rem;
+   min-width: 100%;
+   align-items: center;
+
+   margin-top: 2rem;
+   border-radius: 2rem;
+
+   font-family: 'Hunnin', sans-serif;
+
+   transition: transform 0.2s ease-in-out;
+
+   .primary-button {
+      cursor: pointer;
+      background-color: black;
+      border: none;
+      padding: 1rem 3rem;
+      border-radius: 1rem;
+
+      color: white;
+   }
+}
+
+header.partial.hidden {
+   transform: translateY(-200%);
+}
+
+header .linkedbranch-logo {
+   color: rgb(0, 0, 0);
+   font-size: 3rem;
+}
+
+header .logo {
+   background-color: black;
+}
+
+
+
+/* ========== USER PAGE CLASSES ========== */
 
 .user-content {
    min-height: 100%;
@@ -151,7 +204,7 @@ main {
    justify-content: end;
 }
 
-.linkedbranch-logo .logo{
+.logo{
    height: 3rem;
    width: 3rem;
    
@@ -202,27 +255,6 @@ main {
       width: 100%;
       margin-top: 0;
    }
-
-   /* .user-profile-icon {
-      width: 8rem;
-      height: 8rem;
-   }
-
-   .user-name-label {
-      margin: 1rem;
-   }
-
-   .social-icons-container {
-      gap: 0.2rem;
-      width: 95%;
-      margin: 1rem 0;
-   }
-
-   .social-icons-container img {
-      width: 3rem;
-   }
-
-   .linked-button p {
-      font-size: 2rem;
-   } */
 }
+
+/* ========== BASE CLASSES ========== */
